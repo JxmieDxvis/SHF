@@ -1,0 +1,82 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f0fdf4;
+  margin: 0;
+  padding: 0;
+  color: #1b4332;
+}
+.container {
+  max-width: 700px;
+  margin: auto;
+  padding: 50px 20px;
+}
+h1 {
+  text-align: center;
+  margin-bottom: 40px;
+  color: #2d6a4f;
+  font-size: 2.4em;
+  letter-spacing: 1px;
+}
+.card {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+  margin-bottom: 30px;
+  transition: box-shadow 0.3s ease;
+}
+.card:hover {
+  box-shadow: 0 6px 28px rgba(0, 0, 0, 0.1);
+}
+input {
+  width: 100%;
+  padding: 12px;
+  margin: 12px 0;
+  font-size: 16px;
+  border: 1px solid #b7e4c7;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+button {
+  width: 100%;
+  padding: 12px;
+  background: #40916c;
+  border: none;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background 0.3s ease;
+}
+button:hover {
+  background: #2d6a4f;
+}
+.hidden {
+  display: none;
+}
+.announcement-section {
+  margin-top: 30px;
+}
+.announcement-section h3 {
+  color: #2d6a4f;
+  margin-bottom: 10px;
+}
+.announcement-section ul {
+  list-style: disc;
+  margin-left: 20px;
+}
+.announcement-section li {
+  margin-bottom: 8px;
+  font-size: 16px;
+}
+.announcement-section button {
+  width: auto;
+  padding: 6px 10px;
+  margin-left: 10px;
+  background: #e63946;
+  font-size: 14px;
+}
+.announcement-section button:hover {
+  background: #c1121f;
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Songhurst Farm</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Songhurst Farm</h1>
+
+    <div id="auth-section" class="card">
+      <h2>Login</h2>
+      <input type="email" id="email" placeholder="Email" />
+      <input type="password" id="password" placeholder="Password" />
+      <button onclick="login()">Login</button>
+      <p id="auth-msg"></p>
+    </div>
+
+    <div id="dashboard" class="card hidden">
+      <h2>Welcome <span id="user-email"></span></h2>
+      <p>This is your secure dashboard. Only approved users can access this content.</p>
+
+      <div class="announcement-section">
+        <h3>📢 Announcements</h3>
+        <input type="text" id="newAnnouncement" placeholder="Type a new announcement" />
+        <button onclick="addAnnouncement()">Add Announcement</button>
+        <ul id="announcementList"></ul>
+      </div>
+
+      <button onclick="logout()">Logout</button>
+    </div>
+  </div>
+
+  <!-- Firebase SDKs -->
+  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth-compat.js"></script>
+  <script>
+    const firebaseConfig = {
+      apiKey: "AIzaSyB6KYjHAAbELcEKwstgh1AZb2abqImsb5g",
+      authDomain: "worktracker-b6e6a.firebaseapp.com",
+      projectId: "worktracker-b6e6a",
+      storageBucket: "worktracker-b6e6a.firebasestorage.app",
+      messagingSenderId: "769755385406",
+      appId: "1:769755385406:web:4b5b17781c973d259c4b6f"
+    };
+    firebase.initializeApp(firebaseConfig);
+  </script>
+  <script src="script.js"></script>
+</body>
+</html>
