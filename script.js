@@ -1,8 +1,8 @@
 const auth = firebase.auth();
-const allowedEmail = "rjb131210@gmail.com";
+const allowedEmails = "rjb131210@gmail.com","davisjamie805@gmail.com";
 
 auth.onAuthStateChanged(user => {
-  if (user && user.email === allowedEmail) {
+  if (user && allowedEmails.includes(user.email)) {
     document.getElementById("auth-section").classList.add("hidden");
     document.getElementById("dashboard").classList.remove("hidden");
     document.getElementById("user-email").textContent = user.email;
