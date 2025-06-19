@@ -1,5 +1,5 @@
 const auth = firebase.auth();
-const allowedEmails = ["rjb131210@gmail.com","davisjamie805@gmail.com"}];
+const allowedEmails = ["rjb131210@gmail.com","davisjamie805@gmail.com"];
 
 auth.onAuthStateChanged(user => {
   if (user && allowedEmails.includes(user.email)) {
